@@ -98,6 +98,7 @@ p {
     font-size: 1.5rem;
 }
 
+
 .space {
     white-space: pre;
 }
@@ -107,3 +108,13 @@ p {
     margin-top: -13rem;
     height: 450px;
 }
+
+.flag {
+    height: 50px;
+    width: 80px;
+    border-radius: 5px;
+    border:5px solid whitesmoke;
+    margin-left: 1rem;
+    display: inline;
+}
+
