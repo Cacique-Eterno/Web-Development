@@ -42,7 +42,7 @@ function checkAnswer(currentLevel) {
         }
     } else {
         console.log("failure");
-        //Animate and play song when players responde is wrong
+        //Animate and play song when players response is wrong
         playSound("wrong");
         $("body").addClass("game-over");
         setTimeout(function(){

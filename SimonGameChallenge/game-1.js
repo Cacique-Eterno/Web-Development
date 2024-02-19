@@ -1,3 +1,4 @@
+//this was the first trial of code to make the game, i have to remember and comment what goes wrong on this code
 var start = false;
 var level = 0;
 
