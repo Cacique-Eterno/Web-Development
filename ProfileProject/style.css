@@ -1,11 +1,3 @@
-/*Pegando a fonte do FF6*/
-@font-face {
-  font-family: "Final Fantasy 3/6 Font Regular";
-  src: url("./fonts/final_fantasy_36_font.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /*Ajustando o corpo e colocando o background*/
 body {
   display: flex;

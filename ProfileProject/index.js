@@ -14,9 +14,11 @@ const audio = new Audio('sound/finalFantasy.mp3');
 var chocobo = document.getElementById('chocobo');
 var musicButton = document.getElementById('musicButton')
 
+//Função para configurar o conteúdo inicial
 function setInitContent() {
     initContent = content.innerHTML;
 };
+//Tenho que ajeitar para o ano poder aparecer ao clicar no botão de retorno
 
 //Tocar música
 audio.loop = true;
