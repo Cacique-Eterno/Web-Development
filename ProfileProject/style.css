@@ -18,6 +18,8 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('./img/fundo.png');
+  background-size: cover;
+  background-position: center;
   /*Ajustando a fonte*/
   font-family: "Final Fantasy 3/6 Font Regular", monospace;
   font-weight: normal;
