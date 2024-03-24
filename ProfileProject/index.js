@@ -39,7 +39,7 @@ function playMusic() {
 
 //Adicionando data automaticamente
 level.innerText = new Date().getFullYear() - 2003;
-birthday.innerText = "17/02/" + new Date().getFullYear();
+birthday.innerText = "17/02/" + (new Date().getFullYear() + 1);
 year.innerText = new Date().getFullYear();
 
 //Muda o Idioma entre português e Inglês

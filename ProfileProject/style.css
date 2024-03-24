@@ -84,6 +84,10 @@ body {
   cursor: pointer;
 }
 
+.flag:hover {
+  border-color:grey;
+}
+
 #chocobo {
   margin-left: 20px; /*Poderia mudar isso pra alinhar pelo centro*/
   margin-top: 20px
