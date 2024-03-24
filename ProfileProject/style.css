@@ -43,6 +43,7 @@ body {
   border:5px solid whitesmoke;
   padding:20px;
   border-radius: 30px;
+  position: relative;
 }
 
 #profile {
@@ -90,15 +91,16 @@ body {
 }
 
 #musicButton {
-  position: fixed;
-  left: 375px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
   cursor: pointer;
 }
 
 .returnButton {
-  position: fixed;
-  bottom: 75px;
-  right: 145px;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
   cursor: pointer;
 }
 
