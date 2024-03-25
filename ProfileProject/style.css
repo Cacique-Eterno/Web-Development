@@ -153,6 +153,7 @@ p {
 }
 
 /*Customizando a fonte no Firefox*/
+
 @-moz-document url-prefix() {
   h1 {
     margin-block-start: -1rem;
@@ -172,3 +173,5 @@ p {
     margin-top: 10.5rem;
   }
 }
+
+/* Tenho que adicionar uma customização para mobile também, não está responsivo no celular

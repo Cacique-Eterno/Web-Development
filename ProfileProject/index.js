@@ -4,7 +4,6 @@ const content = document.getElementById('content');
 const returnButton = document.getElementById('return');
 const profile = document.getElementById('profile');
 var language = document.documentElement.lang;
-var initContent = content.innerHTML;
 
 //Definição das variáveis com funções secundárias
 const level = document.getElementById('level');
@@ -14,33 +13,23 @@ const audio = new Audio('sound/finalFantasy.mp3');
 var chocobo = document.getElementById('chocobo');
 var musicButton = document.getElementById('musicButton')
 
-//Função para configurar o conteúdo inicial
-function setInitContent() {
-    initContent = content.innerHTML;
-};
-//Tenho que ajeitar para o ano poder aparecer ao clicar no botão de retorno
-
-//Tocar música
-audio.loop = true;
-function playMusic() {
-    // Verifica se o áudio está pausado
-    if (audio.paused) {
-        // Se estiver pausado, inicia a reprodução
-        audio.play();
-        chocobo.src = "./img/chocobo.gif"
-        musicButton.src = "./img/music.png"
-    } else {
-        // Se estiver reproduzindo, pausa a reprodução
-        audio.pause();
-        chocobo.src = "./img/chocobo.png"
-        musicButton.src = "./img/mute.png"
-    }
-};
-
 //Adicionando data automaticamente
 level.innerText = new Date().getFullYear() - 2003;
 birthday.innerText = "17/02/" + (new Date().getFullYear() + 1);
 year.innerText = new Date().getFullYear();
+
+//initContent tem que ser declarado depois do content.innerHTML e depois da data para funcionar
+content.innerHTML = 
+`All copyrights of the music and images used on this website belong to Square Enix.
+<div class="copyright"> © ${year.innerText} Caio. All rights reserved. </div>`;
+
+var initContent = content.innerHTML;
+//Bug do year resolvido, mas tenho que melhorar o código, ficou muito feio assim
+
+//Função para configurar o conteúdo inicial
+function setInitContent() {
+    initContent = content.innerHTML;
+};
 
 //Muda o Idioma entre português e Inglês
 function changeLanguage(languageSelected) {
@@ -183,3 +172,20 @@ links.forEach(function(link) {
         }, 5000); // Espera 5 segundos para que o botão apareça
     });
 });
+
+//Tocar música
+audio.loop = true;
+function playMusic() {
+    // Verifica se o áudio está pausado
+    if (audio.paused) {
+        // Se estiver pausado, inicia a reprodução
+        audio.play();
+        chocobo.src = "./img/chocobo.gif"
+        musicButton.src = "./img/music.png"
+    } else {
+        // Se estiver reproduzindo, pausa a reprodução
+        audio.pause();
+        chocobo.src = "./img/chocobo.png"
+        musicButton.src = "./img/mute.png"
+    }
+};
