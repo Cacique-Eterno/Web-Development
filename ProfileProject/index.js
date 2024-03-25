@@ -20,8 +20,8 @@ year.innerText = new Date().getFullYear();
 
 //initContent tem que ser declarado depois do content.innerHTML e depois da data para funcionar
 content.innerHTML = 
-`All copyrights of the music and images used on this website belong to Square Enix.
-<div class="copyright"> © ${year.innerText} Caio. All rights reserved. </div>`;
+`Todos os direitos autorais das músicas e imagens utilizadas neste site pertencem à Square Enix.
+<div class="copyright"> © ${year.innerText} Caio. Todos os direitos reservados. </div>`;
 
 var initContent = content.innerHTML;
 //Bug do year resolvido, mas tenho que melhorar o código, ficou muito feio assim
