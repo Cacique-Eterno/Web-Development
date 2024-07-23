@@ -121,6 +121,7 @@ links.forEach(function(link) {
                     typewriter.typeString("Segue alguns de meus projetos no GitHub:")
                     .typeString('<br/><a href="./DiceeChallenge/dicee.html" target="_blank">Jogo de Dados</a>')
                     .typeString('<br/><a href="./DrumKitProject/index.html" target="_blank">Bateria Online</a>')
+                    .typeString('<br/><a href="./PixelArtProject/index.html" target="_blank">Projeto Pixel Art</a>')
                     .typeString('<br/><a href="./SimonGameChallenge/index.html" target="_blank">Simon Mandou</a>')
                     .typeString('<br/><a href="./TinDogProject/index.html" target="_blank">Tindog, o Tinder pra Cachorro</a>')
                     .start();
@@ -152,6 +153,7 @@ links.forEach(function(link) {
                     typewriter.typeString("Here are some of my projects on GitHub:")
                     .typeString('<br/><a href="./DiceeChallenge/dicee.html" target="_blank">Dice Game</a>')
                     .typeString('<br/><a href="./DrumKitProject/index.html" target="_blank">Online Drum Kit</a>')
+                    .typeString('<br/><a href="./PixelArtProject/index.html" target="_blank">Pixel Art Project</a>')
                     .typeString('<br/><a href="./SimonGameChallenge/index.html" target="_blank">Simon Says</a>')
                     .typeString('<br/><a href="./TinDogProject/index.html" target="_blank">Tindog, the Tinder for Dogs</a>')
                     .start();

@@ -1,0 +1,20 @@
+#color-palette > div{
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+#pixel-board {
+    width: 210px;
+    line-height: 0px;
+    border: 1px solid black;
+}
+
+.pixel {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    display: inline-block;
+    /* background-color: white; */
+}
