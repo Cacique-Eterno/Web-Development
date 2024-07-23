@@ -119,7 +119,7 @@ links.forEach(function(link) {
                 break;
                 case 'portfolio':
                     typewriter.typeString("Segue alguns de meus projetos no GitHub:")
-                    .typeString('<br/><a href="https://caioltg.github.io/Web-Development/DiceeChallenge/dicee.html" target="_blank">Jogo de Dados</a>')
+                    .typeString('<br/><a href="./DiceeChallenge/dicee.html" target="_blank">Jogo de Dados</a>')
                     .typeString('<br/><a href="https://caioltg.github.io/Web-Development/DrumKitProject/index.html" target="_blank">Bateria Online</a>')
                     .typeString('<br/><a href="https://caioltg.github.io/Web-Development/SimonGameChallenge/index.html" target="_blank">Simon Mandou</a>')
                     .typeString('<br/><a href="https://caioltg.github.io/Web-Development/TinDogProject/index.html" target="_blank">Tindog, o Tinder pra Cachorro</a>')
