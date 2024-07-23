@@ -1,20 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web-Development</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <title>Ficha do Caio</title>
 </head>
 <body>
-    <h1>Web-Development</h1>
-    <p>There are some Projects of full stack JavaScript course from Udemy.</p>
-    <ul>
-        <li><a href="./DiceeChallenge/dicee.html">Dicee Challenge</a></li>
-        <li><a href="./DrumKitProject/index.html">Drum Kit Project</a></li>
-        <li><a href="./ProfileProject/index.html">Profile Project</a></li>
-        <li><a href="./SimonGameChallenge/index.html">Simon Game Challenge</a></li>
-        <li><a href="./TinDogProject/index.html">TinDog Project</a></li>
-        <!--Github page was duplicating the path file name for some reason, for a while i'll let the code like this, fix later-->
-    </ul>
+    <div class="gui menu">
+        <div class="gui" id="profile">
+            <img src="./img/caio.jpg" id="pic">
+            <div>
+                <h3>Desenvolvedor Web</h3>
+                <h1>Caio</h1>
+                <p>PV 999/999 </br> Nv <span id="level"></span> Próximo nível em <span id="birthday"></span></p>
+            </div>
+            <img src="./img/Brazil.png" class="flag" onclick="changeLanguage()">
+            <img src="./img/USA.png" class="flag" onclick="changeLanguage('pt-br')">
+        </div>
+        <div class="gui left">
+                <h2><a href="#" id="about" class="link">Sobre mim</a></h2>
+                <h2><a href="#" id="education" class="link">Formação</a></h2>
+                <h2><a href="#" id="portfolio" class="link">Portfólio</a></h2>
+                <h2><a href="#" id="contact" class="link">Contato</a></h2>
+        </div>
+        <div class="gui top">
+            <img src="./img/chocobo.png" id="chocobo">
+            <img src="./img/mute.png" id="musicButton" onclick="playMusic()">
+        </div>
+        <div class="gui left top" id="content">
+            Todos os direitos autorais das músicas e imagens utilizadas neste site pertencem à Square Enix.
+            <div class="copyright"> © <span id="year"></span> Caio. Todos os direitos reservados. </div>
+        </div>
+        <img src="./img/voltar.png" class="returnButton" id="return" hidden>
+    </div>
+    <!--Código para a biblioteca TypeWriter-->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="./index.js" charset="utf-8"></script>
 </body>
 </html>
